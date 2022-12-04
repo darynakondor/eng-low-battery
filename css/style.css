@@ -26,24 +26,22 @@ p, button, input::placeholder {
     z-index: 10;
     background-color: #fff;
     border-radius: 20px;
-    text-align: center;
+}
+.main__modal-pin {
+    display: flex;
+    justify-content: center;
 }
 .main__modal-block {
     width: 348px;
     height: 407px;
 }
-.main__form-title-pin {
-    font-size: 18px;
-    line-height: 22px;
-    margin-bottom: 21px;
-}
 .main__input-pin input{
     font-size: 20px;
     line-height: 12px;
-    padding: 17px 95px;
+    padding: 0 90px;
 }
-.main__form-paragraph {
-    text-align: justify;
+.main__input-pin input::placeholder {
+    text-align: center;
 }
 .main-form__icons .main-form__first-icon {
     display: block;
@@ -147,8 +145,13 @@ input, button {
         height: 213px;
         padding: 29px 23px;
     }
+    .main__form-title-pin {
+        font-size: 16.5px;
+        line-height: 22px;
+        margin-bottom: 19px;
+    }
     .main__input-pin input{
-        padding: 17px 70px;
+        padding: 0 70px;
     }
     .main__form-title {
         font-size: 17px;
@@ -173,7 +176,7 @@ input, button {
         height: 60px;
     }
     .main__input-tel input {
-        padding: 13.5px 36.5px;
+        padding: 0 36.5px;
         font-size: 18px;
         line-height: 12px;
     }
@@ -210,19 +213,12 @@ input, button {
         margin-bottom: 21px;
         line-height: 22px;
     }
-    .main__form-title-pin {
-        font-size: 16px;
-    }
-    .main__input-pin input{
-        padding: 17px 90px;
-    }
     .main__form-paragraph {
         margin-bottom: 23px;
     }
     .main-form__icons {
         gap: 26px;
         margin-bottom: 25px;
-        /* margin: 0 111px 25px 91px; */
     }
     .main-form__icons .main-form__first-icon {
         width: 55px;
@@ -233,7 +229,7 @@ input, button {
         height: 72px;
     }
     .main__input-tel input {
-        padding: 17px 59px;
+        padding: 0 59px;
     }
     input, button {
         width: 272px;
@@ -253,7 +249,7 @@ input, button {
         margin-bottom: 26px;
     }
     .main__input-tel input {
-        padding: 17px 50px;
+        padding: 0 50px;
         font-size: 20px;
         line-height: 12px;
     }
@@ -280,6 +276,11 @@ input, button {
         height: 213px;
         padding: 29px 23px;
     }
+    .main__form-title-pin {
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 21px;
+    }
     .main__form-title {
         font-size: 20px;
         margin-bottom: 22px;
@@ -303,7 +304,7 @@ input, button {
         height: 82px;
     }
     .main__input-tel input {
-        padding: 17px 61.5px;
+        padding: 0 61.5px;
         font-size: 20px;
         line-height: 12px;
     }
@@ -353,6 +354,9 @@ input, button {
     .main__input-tel {
         margin-bottom: 18px;
     }
+    .footer  {
+        top: calc(100% - 23px);
+    }
 }
 @media (min-width: 667px) and (max-width: 667.98px) and (min-height: 375px) and (max-height: 375.98px) {
     .main {
@@ -379,6 +383,9 @@ input, button {
     .main__form-paragraph {
         margin-bottom: 0;
     }
+    .footer  {
+        top: calc(100% - 23px);
+    }
 }
 @media (min-width: 768px) and (min-height: 1024px) {
     .main {
@@ -394,14 +401,50 @@ input, button {
         background-image: url("../img/bg/bg_laptop.png");
         background-size: 100% 100%;
     }
+    .main__modal-block {
+        width: 348px;
+        height: 407px;
+        padding: 29px 27px;
+    }
+    .main__form-title {
+        font-size: 20px;
+        margin-bottom: 22px;
+        line-height: 24px;
+    }
+    .main__form-paragraph {
+        margin-bottom: 39px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .main-form__icons {
+        gap: 30px;
+        margin-bottom: 29px;
+    }
+    .main-form__icons .main-form__first-icon {
+        width: 63px;
+        height: 15px;
+    }
+    .main-form__icons .main-form__second-icon {
+        width: 60px;
+        height: 82px;
+    }
+    .main__input-tel input {
+        padding: 0 61.5px;
+        font-size: 20px;
+        line-height: 12px;
+    }
+    input::placeholder {
+        font-size: 20px;
+        line-height: 12px;
+    }
+    input, button {
+        width: 294px;
+        height: 46px;
+    }
     .main__modal-pin {
         width: 348px;
         height: 213px;
         padding: 29px 23px;
-    }
-    .main__input-pin input button {
-        width: 294px;
-        height: 46px;
     }
 }
 @media (min-width: 1920px) and (min-height: 900px)  {
