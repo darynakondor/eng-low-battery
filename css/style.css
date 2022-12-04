@@ -37,7 +37,7 @@ p, button, input::placeholder {
 }
 .main__input-pin input{
     font-size: 20px;
-    line-height: 7px;
+    line-height: 14px;
     padding: 0 90px;
 }
 .main__input-pin input::placeholder {
@@ -177,7 +177,7 @@ input, button {
     .main__input-tel input {
         padding: 0 36.5px;
         font-size: 18px;
-        line-height: 7px;
+        line-height: 14px;
     }
     input, button {
         width: 227px;
@@ -185,7 +185,7 @@ input, button {
     }
     input::placeholder {
         font-size: 18px;
-        line-height: 7px;
+        line-height: 14px;
     }
     button {
         font-size: 18px;
@@ -303,11 +303,11 @@ input, button {
     .main__input-tel input {
         padding: 0 61.5px;
         font-size: 20px;
-        line-height: 7px;
+        line-height: 14px;
     }
     input::placeholder {
         font-size: 20px;
-        line-height: 7px;
+        line-height: 14px;
     }
     input, button {
         width: 294px;
@@ -428,11 +428,11 @@ input, button {
     .main__input-tel input {
         padding: 0 61.5px;
         font-size: 20px;
-        line-height: 7px;
+        line-height: 14px;
     }
     input::placeholder {
         font-size: 20px;
-        line-height: 7px;
+        line-height: 14px;
     }
     input, button {
         width: 294px;
