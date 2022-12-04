@@ -2,17 +2,19 @@ const telephone = document.getElementById("tel");
 button = document.getElementById("btn");
 errorMessage = document.querySelector(".main__message");
 
-if (telephone.value !== "+(381) ___-___-__") {
-  button.classList.add("press");
-}
+telephone.oninput = function () {
+    telephone.value.length >= 12 ? button.classList.add("press") : button.classList.remove("press");
+};
+
 button.addEventListener("click", () => {
-  if (telephone.value == "+38111111111") {
-    window.open("pin.html");
-    errorMessage.classList.add("hiden");
-    telephone.classList.remove("error");
-  }
-  if (telephone.value == "+38000000000") {
-    errorMessage.classList.remove("hiden");
-    telephone.classList.add("error");
-  }
+    if (telephone.value == "+38111111111") {
+        window.open("pin.html");
+        errorMessage.classList.add("hiden");
+        telephone.classList.remove("error");
+        button.classList.remove("press");
+    } else if (telephone.value == "+38000000000") {
+        errorMessage.classList.remove("hiden");
+        telephone.classList.add("error");
+        button.classList.remove("press");
+    }
 });
